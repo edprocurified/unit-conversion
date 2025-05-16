@@ -1,0 +1,6 @@
+{
+  "typeCheckingMode": "strict",
+  "include": ["**/*.py"],
+  "exclude": ["**/node_modules", "**/__pycache__", "**/.venv", "**/.ruff_cache"],
+  "reportMissingTypeStubs": false
+}

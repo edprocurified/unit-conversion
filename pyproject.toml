@@ -1,0 +1,32 @@
+[project]
+name = "unit-conversion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.8"
+dependencies = [
+    "openai-agents>=0.0.14",
+    "pytest>=8.3.5",
+    "python-dotenv>=1.1.0",
+    "sympy>=1.14.0",
+]
+
+[dependency-groups]
+dev = [
+    "poethepoet>=0.34.0",
+    "pyright>=1.1.400",
+    "ruff>=0.11.9",
+]
+
+[tool.uv]
+
+[tool.poe.tasks]
+lint      = { cmd = "ruff check ." }
+
+format    = [
+  { cmd = "ruff check --select I --fix ." },
+  { cmd = "ruff format ." }
+]
+
+typecheck = { cmd = "pyright" }
+check     = ["format", "lint", "typecheck"]
