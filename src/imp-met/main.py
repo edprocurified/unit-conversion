@@ -47,6 +47,7 @@ agent = Agent(
     Use the evaluation tool to compute the conversion using string mathematical expressions.
     Each input has an ID — carry it over into the output.
     For the reasoning, please mention the conversion factor used so it's clear.
+    Convert inches to millimeters and feet to meters.
     """,
     tools=[evaluate],
     model="gpt-4.1-mini",
@@ -87,7 +88,6 @@ async def run_batch(batch: List[LineItemInput]) -> Dict[str, ConvertedDescriptio
         total_usage.add(resp.usage)
 
     model_name: str = str(agent.model)
-    print(model_name)
     token_tracker.track_usage(
         phase="batch",
         usage=total_usage,
