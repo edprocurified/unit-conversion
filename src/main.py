@@ -10,7 +10,7 @@ from agents.usage import Usage
 from dotenv import load_dotenv
 from pydantic import BaseModel
 
-from token_tracker import token_tracker
+from token_tracker import token_tracker  # To track usage
 from tool import evaluate as raw_evaluate
 
 load_dotenv()
