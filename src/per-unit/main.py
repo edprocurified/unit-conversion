@@ -1,7 +1,8 @@
 import asyncio
 import json
 import os
-from typing import Dict, List
+from pathlib import Path
+from typing import Any, Dict, List
 
 from agents import Agent, Runner, function_tool, trace
 from agents.model_settings import ModelSettings
@@ -20,7 +21,7 @@ class LineItemInput(BaseModel):
     id: str
     description: str
     quantity: int | float
-    uom: str
+    uom: str = "Each"
     unit_rate: int | float
 
 
@@ -59,6 +60,7 @@ agent = Agent(
     For calculations, use the evaluation tool to compute a conversion/operation using string mathematical expressions.
     Each input has an ID - carry it over into the output.
     For the reasoning, please mention the operations performed and why.
+    This per-unit conversion is typically generally done for lengths (like pipes) when an item is reported for example being 5 meters.
     If it is already per unit, do not do anything. Report the item as is.
 
     Example input:
@@ -66,7 +68,7 @@ agent = Agent(
         "quote_rows": [
             {{
                 "quote_row_uuid": "Q0001",
-                "description": "1\" x 6 MTR UPVC Pipe",
+                "description": "1\" x 5 MTR UPVC Pipe",
                 "quantity": 1,
                 "uom": "Ea",
                 "unit_rate": 60
@@ -80,22 +82,22 @@ agent = Agent(
         "quote_rows": [
             {{
                 "quote_row_uuid": "Q0001",
-                "description": "1\" x 1 MTR UPVC Pipe", # from 6 MTR -> 1 MTR ( = PER UNIT) -> Factor = 6
-                "quantity": 6, # Multiply by factor = 1*6=6
+                "description": "1\" x 1 MTR UPVC Pipe", # from 5 MTR -> 1 MTR ( = PER UNIT) -> Factor = 5
+                "quantity": 5, # Multiply by factor = 1*5=5
                 "uom": "M", # From each to meter
-                "unit_rate": 60 # Divide by factor = 60/6 = 10
+                "unit_rate": 12 # Divide by factor = 60/5 = 12
             }},
             ...
         ]
         }}
 
     This is how it is done:
-    1. Update the description accordingly. You will get a factor. In our case, 6
+    1. Update the description accordingly. You will get a factor. In our case, 5.
     2. Multiply quantity by the factor.
     3. Update the unit of measure to reflect the unit.
     4. Update the unit prace by dividing by the factor.
     5. Verification: OLD QUANTITY X OLD UNIT RATE = NEW QUANTITY X NEW UNIT RATE.
-    6. Make the reasoning human friendly to be displayed on the frontend. Example: Converted from 6 meter per pipe to 1 meter per pipe. Quantity multiplied by 6 (1 x 6 = 6). Unit rate divided by 6 (60 / 6 = 10).
+    6. Make the reasoning human friendly to be displayed on the frontend. Example: Converted from 5 meter per pipe to 1 meter per pipe. Quantity multiplied by 5 (1 x 5 = 5). Unit rate divided by 5 (60 / 5 = 12).
     """,
     tools=[evaluate],
     model="gpt-4.1-mini",
@@ -103,96 +105,29 @@ agent = Agent(
     model_settings=ModelSettings(include_usage=True),
 )
 
-# More structured sample input with details for per-unit conversion
-sample_input: Dict[str, Dict[str, str | int | float]] = {
-    "Q0001": {
-        "description": '3/4"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-        "quantity": 1,
-        "uom": "Ea",
-        "unit_rate": 11,
-    },
-    "Q0002": {
-        "description": '1"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-        "quantity": 138,
-        "uom": "Ea",
-        "unit_rate": 15,
-    },
-    "Q0003": {
-        "description": '1 1/4"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-        "quantity": 22,
-        "uom": "Ea",
-        "unit_rate": 25,
-    },
-    "Q0004": {
-        "description": '1 1/2"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-        "quantity": 2,
-        "uom": "Ea",
-        "unit_rate": 31.5,
-    },
-    "Q0005": {
-        "description": '2"X6 MTR UPVC PR PIPE CLS E EFFAST',
-        "quantity": 65,
-        "uom": "Ea",
-        "unit_rate": 50,
-    },
-    "Q0006": {
-        "description": '3"X6 MTR UPVC PR PIPE CLS E EFFAST',
-        "quantity": 270,
-        "uom": "Ea",
-        "unit_rate": 95,
-    },
-    "Q0007": {
-        "description": '4"X6 MTR UPVC PR PIPE CLS E EFFAST',
-        "quantity": 225,
-        "uom": "Ea",
-        "unit_rate": 161.40,
-    },
-    "Q0008": {
-        "description": '6"X6 MTR UPVC PR PIPE CLS E EFFAST',
-        "quantity": 21,
-        "uom": "Ea",
-        "unit_rate": 349.10,
-    },
-    "Q0009": {
-        "description": '8"X6 MTR UPVC PR PIPE CLS E EFFAST',
-        "quantity": 31,
-        "uom": "Ea",
-        "unit_rate": 585.66,
-    },
-    "Q0010": {
-        "description": 'PVC REDUCING BUSH 3/4"x1/2"',
-        "quantity": 1,
-        "uom": "Ea",
-        "unit_rate": 1.63,
-    },
-    "Q0011": {
-        "description": 'PVC REDUCING BUSH 1"X3/4"',
-        "quantity": 50,
-        "uom": "Ea",
-        "unit_rate": 3.06,
-    },
-    "Q0012": {
-        "description": "PV REDUCING BUSH 30mmx25mm",
-        "quantity": 1,
-        "uom": "Ea",
-        "unit_rate": 25,
-    },
-}
+
+def load_sample_input() -> List[Dict[str, Any]]:
+    """Load sample input from JSON file in the same directory."""
+    current_dir = Path(__file__).parent
+    json_path = current_dir / "sample_input.json"
+
+    if not json_path.exists():
+        raise FileNotFoundError(f"Sample input file not found at {json_path}")
+
+    with open(json_path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def batch_items(
-    data: Dict[str, Dict[str, str | int | float]], size: int
-) -> List[List[LineItemInput]]:
-    # Create LineItemInput objects with the structured input data
+def batch_items(data: List[Dict[str, Any]], size: int) -> List[List[LineItemInput]]:
     items = [
         LineItemInput(
-            id=k,
-            description=str(v["description"]),
-            quantity=float(v["quantity"]),
-            uom=str(v["uom"]),
-            unit_rate=float(v["unit_rate"]),
+            id=str(item["quote_id"]),
+            description=str(item["Description"]),
+            quantity=float(item["Qty"]),
+            unit_rate=float(item["Rate"]),
+            # Using default "Each" for uom since it's not in the input
         )
-        for k, v in data.items()
+        for item in data
     ]
     return [items[i : i + size] for i in range(0, len(items), size)]
 
@@ -229,6 +164,7 @@ async def run_batch(batch: List[LineItemInput]) -> Dict[str, ConvertedLineItem]:
 
 async def main() -> None:
     BATCH_SIZE = 10
+    sample_input = load_sample_input()
     batches = batch_items(sample_input, BATCH_SIZE)
 
     all_results: List[Dict[str, ConvertedLineItem]] = await asyncio.gather(
@@ -254,10 +190,23 @@ async def main() -> None:
         for id_, conv in merged_result.items()
     }
 
-    print(json.dumps(final_output, indent=2))
+    # Save the complete output to a JSON file
+    output_file = Path(__file__).parent / "conversion_results.json"
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(final_output, f, indent=2, ensure_ascii=False)
 
+    # Save usage statistics
+    usage_file = Path(__file__).parent / "usage_stats.json"
+    usage_stats = {
+        "summary": token_tracker.get_summary(),
+        "detailed_logs": token_tracker.detailed_logs,
+    }
+    with open(usage_file, "w", encoding="utf-8") as f:
+        json.dump(usage_stats, f, indent=2)
+
+    # Still print to console for immediate feedback
+    print(json.dumps(final_output, indent=2, ensure_ascii=False))
     print(token_tracker.get_summary())
-
     print("\n===== DETAILED PER-BATCH USAGE =====")
     for log in token_tracker.detailed_logs:
         desc = log["description"]

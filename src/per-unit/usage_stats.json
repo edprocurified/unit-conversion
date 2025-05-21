@@ -1,0 +1,140 @@
+{
+  "summary": "\n===== TOKEN USAGE SUMMARY =====\n\n\ud83d\udcca TOTAL: \n   Calls:           15\n   Input Tokens:    19,020\n   Output Tokens:   14,057\n   Estimated Cost:  $0.0301\n\n\ud83d\udcca BATCH: \n   Calls:           15\n   Input Tokens:    19,020\n   Output Tokens:   14,057\n   Estimated Cost:  $0.0301",
+  "detailed_logs": [
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q12005,Q12006,Q12007,Q12008",
+      "input_tokens": 941,
+      "output_tokens": 328,
+      "cost": 0.0009012000000000001,
+      "timestamp": "2025-05-21T16:12:07.247347"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q4005,Q4006,Q4007,Q4008,Q4009,Q4010,Q4011,Q4012,Q5001,Q5002",
+      "input_tokens": 1213,
+      "output_tokens": 904,
+      "cost": 0.0019316000000000001,
+      "timestamp": "2025-05-21T16:12:15.460094"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q8006,Q8007,Q8008,Q8009,Q8010,Q8011,Q8012,Q8013,Q9001,Q9002",
+      "input_tokens": 1244,
+      "output_tokens": 966,
+      "cost": 0.0020432000000000002,
+      "timestamp": "2025-05-21T16:12:16.234646"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q11009,Q11010,Q11011,Q11012,Q11013,Q11014,Q12001,Q12002,Q12003,Q12004",
+      "input_tokens": 1180,
+      "output_tokens": 858,
+      "cost": 0.0018448000000000002,
+      "timestamp": "2025-05-21T16:12:16.452618"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q9003,Q9004,Q9005,Q9006,Q9007,Q9008,Q9009,Q9010,Q9011,Q9012",
+      "input_tokens": 1237,
+      "output_tokens": 932,
+      "cost": 0.001986,
+      "timestamp": "2025-05-21T16:12:16.727931"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q3007,Q3008,Q3009,Q3010,Q3011,Q3012,Q4001,Q4002,Q4003,Q4004",
+      "input_tokens": 1219,
+      "output_tokens": 986,
+      "cost": 0.0020652,
+      "timestamp": "2025-05-21T16:12:17.013730"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q2010,Q2011,Q2012,Q2013,Q3001,Q3002,Q3003,Q3004,Q3005,Q3006",
+      "input_tokens": 1237,
+      "output_tokens": 932,
+      "cost": 0.001986,
+      "timestamp": "2025-05-21T16:12:17.212624"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q6008,Q6009,Q6010,Q6011,Q6012,Q7001,Q7002,Q7003,Q7004,Q7005",
+      "input_tokens": 1173,
+      "output_tokens": 804,
+      "cost": 0.0017556,
+      "timestamp": "2025-05-21T16:12:20.350071"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q5013,Q5014,Q5015,Q6001,Q6002,Q6003,Q6004,Q6005,Q6006,Q6007",
+      "input_tokens": 1182,
+      "output_tokens": 882,
+      "cost": 0.001884,
+      "timestamp": "2025-05-21T16:12:20.493091"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q5003,Q5004,Q5005,Q5006,Q5007,Q5008,Q5009,Q5010,Q5011,Q5012",
+      "input_tokens": 1209,
+      "output_tokens": 876,
+      "cost": 0.0018852000000000003,
+      "timestamp": "2025-05-21T16:12:22.214132"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q1011,Q2001,Q2002,Q2003,Q2004,Q2005,Q2006,Q2007,Q2008,Q2009",
+      "input_tokens": 1250,
+      "output_tokens": 968,
+      "cost": 0.0020488,
+      "timestamp": "2025-05-21T16:12:23.023924"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q10001,Q10002,Q10003,Q10004,Q10005,Q10006,Q10007,Q10008,Q10009,Q10010",
+      "input_tokens": 1221,
+      "output_tokens": 980,
+      "cost": 0.0020564,
+      "timestamp": "2025-05-21T16:12:23.754704"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q10011,Q10012,Q11001,Q11002,Q11003,Q11004,Q11005,Q11006,Q11007,Q11008",
+      "input_tokens": 1208,
+      "output_tokens": 874,
+      "cost": 0.0018816000000000002,
+      "timestamp": "2025-05-21T16:12:29.887512"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q7006,Q7007,Q7008,Q7009,Q7010,Q8001,Q8002,Q8003,Q8004,Q8005",
+      "input_tokens": 1541,
+      "output_tokens": 1350,
+      "cost": 0.0027764,
+      "timestamp": "2025-05-21T16:12:29.985648"
+    },
+    {
+      "phase": "batch",
+      "model": "gpt-4.1-mini",
+      "description": "Batch IDs: Q1001,Q1002,Q1003,Q1004,Q1005,Q1006,Q1007,Q1008,Q1009,Q1010",
+      "input_tokens": 1965,
+      "output_tokens": 1417,
+      "cost": 0.0030532000000000003,
+      "timestamp": "2025-05-21T16:12:41.885550"
+    }
+  ]
+}

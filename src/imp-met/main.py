@@ -47,6 +47,7 @@ agent = Agent(
 
     Only convert the imperial units (inch, ft, etc.). Already existing metric units should not be converted nor changed. Keep them as is.
     Use the evaluation tool to compute the conversion using string mathematical expressions, only when you're making a conversion.
+    Small note: Pay attention to numbers reported in compound form: 11/2 could mean 1" and 1/2", and not 11/2 (5.5) inches.
     Each input has an ID — carry it over into the output.
     For the reasoning, please mention the conversion factor used so it's clear.
     Convert inches to millimeters and feet to meters.
