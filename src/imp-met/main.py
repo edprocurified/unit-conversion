@@ -1,7 +1,8 @@
 import asyncio
 import json
 import os
-from typing import Dict, List
+from pathlib import Path
+from typing import Any, Dict, List
 
 from agents import Agent, Runner, function_tool, trace
 from agents.model_settings import ModelSettings
@@ -9,7 +10,6 @@ from agents.result import RunResult
 from agents.usage import Usage
 from dotenv import load_dotenv
 from pydantic import BaseModel
-
 from token_tracker import token_tracker  # To track usage
 from tool import evaluate as raw_evaluate
 
@@ -42,9 +42,11 @@ agent = Agent(
     name="Imperial to Metric Converter",
     instructions="""
     You are an engineering wizard.
+
     You are responsible for converting line item descriptions from imperial to metric.
-    Only convert the imperial units. Already existing metric units should not be converted nor changed. Keep them as is.
-    Use the evaluation tool to compute the conversion using string mathematical expressions.
+
+    Only convert the imperial units (inch, ft, etc.). Already existing metric units should not be converted nor changed. Keep them as is.
+    Use the evaluation tool to compute the conversion using string mathematical expressions, only when you're making a conversion.
     Each input has an ID — carry it over into the output.
     For the reasoning, please mention the conversion factor used so it's clear.
     Convert inches to millimeters and feet to meters.
@@ -55,30 +57,33 @@ agent = Agent(
     model_settings=ModelSettings(include_usage=True),
 )
 
-sample_input: Dict[str, str] = {
-    "Q0001": '3/4"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-    "Q0002": '1"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-    "Q0003": '1 1/4"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-    "Q0004": '1 1/2"X6 MTR UPVC PR PIPE CLS E - EFFAST',
-    "Q0005": '2"X6 MTR UPVC PR PIPE CLS E EFFAST',
-    "Q0006": '3"X6 MTR UPVC PR PIPE CLS E EFFAST',
-    "Q0007": '4"X6 MTR UPVC PR PIPE CLS E EFFAST',
-    "Q0008": '6"X6 MTR UPVC PR PIPE CLS E EFFAST',
-    "Q0009": '8"X6 MTR UPVC PR PIPE CLS E EFFAST',
-    "Q0010": 'PVC REDUCING BUSH 3/4"x1/2"',
-    "Q0011": 'PVC REDUCING BUSH 1"X3/4"',
-    "Q0012": "PV REDUCING BUSH 30mmx25mm",
-}
+
+def load_sample_input() -> List[Dict[str, Any]]:
+    """Load sample input from JSON file in the same directory."""
+    current_dir = Path(__file__).parent
+    json_path = current_dir / "sample_input.json"
+
+    if not json_path.exists():
+        raise FileNotFoundError(f"Sample input file not found at {json_path}")
+
+    with open(json_path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def batch_items(data: Dict[str, str], size: int) -> List[List[LineItemInput]]:
-    items = [LineItemInput(id=k, description=v) for k, v in data.items()]
+def batch_items(data: List[Dict[str, Any]], size: int) -> List[List[LineItemInput]]:
+    items = [
+        LineItemInput(
+            id=str(item["quote_id"]),  # Using quote_id as the identifier
+            description=item["Description"],
+        )
+        for item in data
+    ]
     return [items[i : i + size] for i in range(0, len(items), size)]
 
 
 async def run_batch(batch: List[LineItemInput]) -> Dict[str, ConvertedDescription]:
     payload_dict = {item.id: {"description": item.description} for item in batch}
-    input_str = json.dumps(payload_dict)
+    input_str = json.dumps(payload_dict, ensure_ascii=False)
 
     with trace("Imperial Converter"):
         result: RunResult = await Runner.run(agent, input_str)
@@ -100,6 +105,7 @@ async def run_batch(batch: List[LineItemInput]) -> Dict[str, ConvertedDescriptio
 
 async def main() -> None:
     BATCH_SIZE = 10
+    sample_input: List[Dict[str, Any]] = load_sample_input()
     batches = batch_items(sample_input, BATCH_SIZE)
 
     all_results: List[Dict[str, ConvertedDescription]] = await asyncio.gather(
@@ -119,10 +125,23 @@ async def main() -> None:
         for id_, conv in merged_result.items()
     }
 
-    print(json.dumps(final_output, indent=2))
+    # Save the complete output to a JSON file
+    output_file = Path(__file__).parent / "conversion_results.json"
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(final_output, f, indent=2, ensure_ascii=False)
 
+    # Save usage statistics
+    usage_file = Path(__file__).parent / "usage_stats.json"
+    usage_stats = {
+        "summary": token_tracker.get_summary(),
+        "detailed_logs": token_tracker.detailed_logs,
+    }
+    with open(usage_file, "w", encoding="utf-8") as f:
+        json.dump(usage_stats, f, indent=2)
+
+    # Still print to console for immediate feedback
+    print(json.dumps(final_output, indent=2, ensure_ascii=False))
     print(token_tracker.get_summary())
-
     print("\n===== DETAILED PER-BATCH USAGE =====")
     for log in token_tracker.detailed_logs:
         desc = log["description"]

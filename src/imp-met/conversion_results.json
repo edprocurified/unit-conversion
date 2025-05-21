@@ -1,0 +1,722 @@
+{
+  "Q1001": {
+    "old_description": "Project : Wynn tower base building 3/4\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "Project : Wynn tower base building 19.05mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 3/4 inch to millimeters using the factor 1 inch = 25.4 mm, calculated as 3/4 * 25.4 = 19.05 mm."
+  },
+  "Q1002": {
+    "old_description": "1\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "25.4mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 1 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q1003": {
+    "old_description": "11/4\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "31.75mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 1.25 inches to millimeters using the factor 1 inch = 25.4 mm, calculated as 1.25 * 25.4 = 31.75 mm."
+  },
+  "Q1004": {
+    "old_description": "11/2\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "38.1mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 1.5 inches to millimeters using the factor 1 inch = 25.4 mm, calculated as 1.5 * 25.4 = 38.1 mm."
+  },
+  "Q1005": {
+    "old_description": "2\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "50.8mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 2 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q1006": {
+    "old_description": "3\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "76.2mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 3 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q1007": {
+    "old_description": "4\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "101.6mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 4 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q1008": {
+    "old_description": "6\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "152.4mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 6 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q1009": {
+    "old_description": "8\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "203.2mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 8 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q1010": {
+    "old_description": "PVC REDUCING BUSH 3/4\"x1/2\"",
+    "new_description": "PVC REDUCING BUSH 19.05mmx12.7mm",
+    "reasoning": "Converted 3/4 inch and 1/2 inch to millimeters using the factor 1 inch = 25.4 mm, calculated as 3/4 * 25.4 = 19.05 mm and 1/2 * 25.4 = 12.7 mm."
+  },
+  "Q1011": {
+    "old_description": "PVC REDUCING BUSH 1\"X3/4\"",
+    "new_description": "PVC REDUCING BUSH 25.4mm X 19.05mm",
+    "reasoning": "Converted 1 inch to 25.4 mm and 3/4 inch to 19.05 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2001": {
+    "old_description": "PVC REDUCING BUSH 11/4X1\"",
+    "new_description": "PVC REDUCING BUSH 31.75mm X 25.4mm",
+    "reasoning": "Converted 11/4 inches (1.25 inches) to 31.75 mm and 1 inch to 25.4 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2002": {
+    "old_description": "PVC REDUCING BUSH 11/2\"x11/4\"",
+    "new_description": "PVC REDUCING BUSH 38.1mm x 31.75mm",
+    "reasoning": "Converted 11/2 inches (1.5 inches) to 38.1 mm and 11/4 inches (1.25 inches) to 31.75 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2003": {
+    "old_description": "PVC REDUCING BUSH 2\"X11/2\"",
+    "new_description": "PVC REDUCING BUSH 50.8mm X 38.1mm",
+    "reasoning": "Converted 2 inches to 50.8 mm and 11/2 inches (1.5 inches) to 38.1 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2004": {
+    "old_description": "PVC REDUCING BUSH 3\"x21/2\"",
+    "new_description": "PVC REDUCING BUSH 76.2mm x 63.5mm",
+    "reasoning": "Converted 3 inches to 76.2 mm and 21/2 inches (2.5 inches) to 63.5 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2005": {
+    "old_description": "PVC REDUCING BUSH 4\"X3\"",
+    "new_description": "PVC REDUCING BUSH 101.6mm X 76.2mm",
+    "reasoning": "Converted 4 inches to 101.6 mm and 3 inches to 76.2 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2006": {
+    "old_description": "PVC REDUCING BUSH 6\"X4\"",
+    "new_description": "PVC REDUCING BUSH 152.4mm X 101.6mm",
+    "reasoning": "Converted 6 inches to 152.4 mm and 4 inches to 101.6 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2007": {
+    "old_description": "PVC REDUCING BUSH 8\"X6\"",
+    "new_description": "PVC REDUCING BUSH 203.2mm X 152.4mm",
+    "reasoning": "Converted 8 inches to 203.2 mm and 6 inches to 152.4 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2008": {
+    "old_description": "PVC TEE 90 3/4\"",
+    "new_description": "PVC TEE 90 19.05mm",
+    "reasoning": "Converted 3/4 inch to 19.05 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2009": {
+    "old_description": "PVC REDUCING BUSH 3/4\"x1/2\"",
+    "new_description": "PVC REDUCING BUSH 19.05mm x 12.7mm",
+    "reasoning": "Converted 3/4 inch to 19.05 mm and 1/2 inch to 12.7 mm using the factor 1 inch = 25.4 mm."
+  },
+  "Q2010": {
+    "old_description": "PVC TEE 90 1\"",
+    "new_description": "PVC TEE 90 25.4 mm",
+    "reasoning": "Converted 1 inch to 25.4 millimeters using the factor 25.4"
+  },
+  "Q2011": {
+    "old_description": "PVC REDUCING BUSH 1\"X3/4\"",
+    "new_description": "PVC REDUCING BUSH 25.4 mm x 19.05 mm",
+    "reasoning": "Converted 1 inch to 25.4 mm and 3/4 inch to 19.05 mm using the factor 25.4"
+  },
+  "Q2012": {
+    "old_description": "PVC TEE 90 11/4\"",
+    "new_description": "PVC TEE 90 31.75 mm",
+    "reasoning": "Converted 1.25 inches to 31.75 millimeters using the factor 25.4"
+  },
+  "Q2013": {
+    "old_description": "PVC REDUCING BUSH 11/2\"x11/4\"",
+    "new_description": "PVC REDUCING BUSH 38.1 mm x 31.75 mm",
+    "reasoning": "Converted 1.5 inches to 38.1 mm and 1.25 inches to 31.75 mm using the factor 25.4"
+  },
+  "Q3001": {
+    "old_description": "PVC TEE 90 11/2\"",
+    "new_description": "PVC TEE 90 38.1 mm",
+    "reasoning": "Converted 1.5 inches to 38.1 millimeters using the factor 25.4"
+  },
+  "Q3002": {
+    "old_description": "PVC REDUCING BUSH 11/2\"x11/4\"",
+    "new_description": "PVC REDUCING BUSH 38.1 mm x 31.75 mm",
+    "reasoning": "Converted 1.5 inches to 38.1 mm and 1.25 inches to 31.75 mm using the factor 25.4"
+  },
+  "Q3003": {
+    "old_description": "PVC TEE 90 2\"",
+    "new_description": "PVC TEE 90 50.8 mm",
+    "reasoning": "Converted 2 inches to 50.8 millimeters using the factor 25.4"
+  },
+  "Q3004": {
+    "old_description": "PVC REDUCING BUSH 2\"X11/2\"",
+    "new_description": "PVC REDUCING BUSH 50.8 mm x 38.1 mm",
+    "reasoning": "Converted 2 inches to 50.8 mm and 1.5 inches to 38.1 mm using the factor 25.4"
+  },
+  "Q3005": {
+    "old_description": "PVC TEE 90 DEG. 3\"",
+    "new_description": "PVC TEE 90 DEG. 76.2 mm",
+    "reasoning": "Converted 3 inches to 76.2 millimeters using the factor 25.4"
+  },
+  "Q3006": {
+    "old_description": "PVC REDUCING BUSH 3\"x21/2\"",
+    "new_description": "PVC REDUCING BUSH 76.2 mm x 63.5 mm",
+    "reasoning": "Converted 3 inches to 76.2 mm and 2.5 inches to 63.5 mm using the factor 25.4"
+  },
+  "Q3007": {
+    "old_description": "PVC TEE 90 4\"",
+    "new_description": "PVC TEE 90 101.6mm",
+    "reasoning": "Converted 4 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q3008": {
+    "old_description": "PVC REDUCING BUSH 4\"X3\"",
+    "new_description": "PVC REDUCING BUSH 101.6mmX76.2mm",
+    "reasoning": "Converted 4 inches and 3 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q3009": {
+    "old_description": "PVC TEE 90 6\"",
+    "new_description": "PVC TEE 90 152.4mm",
+    "reasoning": "Converted 6 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q3010": {
+    "old_description": "PVC REDUCING BUSH 6\"X4\"",
+    "new_description": "PVC REDUCING BUSH 152.4mmX101.6mm",
+    "reasoning": "Converted 6 inches and 4 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q3011": {
+    "old_description": "PVC TEE 90 8\"",
+    "new_description": "PVC TEE 90 203.2mm",
+    "reasoning": "Converted 8 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q3012": {
+    "old_description": "PVC REDUCING BUSH 8\"X6\"",
+    "new_description": "PVC REDUCING BUSH 203.2mmX152.4mm",
+    "reasoning": "Converted 8 inches and 6 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q4001": {
+    "old_description": "PVC ELBOW 90 3/4\"",
+    "new_description": "PVC ELBOW 90 19.05mm",
+    "reasoning": "Converted 0.75 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q4002": {
+    "old_description": "PVC ELBOW 90 1\"",
+    "new_description": "PVC ELBOW 90 25.4mm",
+    "reasoning": "Converted 1 inch to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q4003": {
+    "old_description": "PVC ELBOW 90 11/4\"",
+    "new_description": "PVC ELBOW 90 31.75mm",
+    "reasoning": "Converted 1.25 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q4004": {
+    "old_description": "PVC ELBOW 90 11/2\"",
+    "new_description": "PVC ELBOW 90 38.1mm",
+    "reasoning": "Converted 1.5 inches to millimeters using 1 inch = 25.4 mm"
+  },
+  "Q4005": {
+    "old_description": "PVC ELBOW 90 2\"",
+    "new_description": "PVC ELBOW 90 50.8 mm",
+    "reasoning": "Converted 2 inches to 50.8 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q4006": {
+    "old_description": "PVC ELBOW 90 3\"",
+    "new_description": "PVC ELBOW 90 76.2 mm",
+    "reasoning": "Converted 3 inches to 76.2 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q4007": {
+    "old_description": "PVC ELBOW 90 4\"",
+    "new_description": "PVC ELBOW 90 101.6 mm",
+    "reasoning": "Converted 4 inches to 101.6 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q4008": {
+    "old_description": "PVC ELBOW 90 6\"",
+    "new_description": "PVC ELBOW 90 152.4 mm",
+    "reasoning": "Converted 6 inches to 152.4 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q4009": {
+    "old_description": "PVC ELBOW 90 8\"",
+    "new_description": "PVC ELBOW 90 203.2 mm",
+    "reasoning": "Converted 8 inches to 203.2 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q4010": {
+    "old_description": "PVC ELBOW 45 3/4\"",
+    "new_description": "PVC ELBOW 45 19.05 mm",
+    "reasoning": "Converted 3/4 inch to 19.05 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q4011": {
+    "old_description": "PVC ELBOW 45 1\"",
+    "new_description": "PVC ELBOW 45 25.4 mm",
+    "reasoning": "Converted 1 inch to 25.4 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q4012": {
+    "old_description": "PVC ELBOW 45 11/4\"",
+    "new_description": "PVC ELBOW 45 69.85 mm",
+    "reasoning": "Converted 11/4 inches to 69.85 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q5001": {
+    "old_description": "PVC ELBOW 45 11/2\"",
+    "new_description": "PVC ELBOW 45 139.7 mm",
+    "reasoning": "Converted 11/2 inches to 139.7 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q5002": {
+    "old_description": "PVC ELBOW 45 2\"",
+    "new_description": "PVC ELBOW 45 50.8 mm",
+    "reasoning": "Converted 2 inches to 50.8 millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q5003": {
+    "old_description": "PVC ELBOW 45 3\"",
+    "new_description": "PVC ELBOW 45 76.2 mm",
+    "reasoning": "Converted 3 inches to millimeters using factor 1 inch = 25.4 mm resulting in 3 * 25.4 = 76.2 mm."
+  },
+  "Q5004": {
+    "old_description": "PVC ELBOW 45 4\"",
+    "new_description": "PVC ELBOW 45 101.6 mm",
+    "reasoning": "Converted 4 inches to millimeters using factor 1 inch = 25.4 mm resulting in 4 * 25.4 = 101.6 mm."
+  },
+  "Q5005": {
+    "old_description": "PVC ELBOW 45 6\"",
+    "new_description": "PVC ELBOW 45 152.4 mm",
+    "reasoning": "Converted 6 inches to millimeters using factor 1 inch = 25.4 mm resulting in 6 * 25.4 = 152.4 mm."
+  },
+  "Q5006": {
+    "old_description": "PVC ELBOW 45 8\"",
+    "new_description": "PVC ELBOW 45 203.2 mm",
+    "reasoning": "Converted 8 inches to millimeters using factor 1 inch = 25.4 mm resulting in 8 * 25.4 = 203.2 mm."
+  },
+  "Q5007": {
+    "old_description": "PVC TEE 90 3/4\"",
+    "new_description": "PVC TEE 90 19.05 mm",
+    "reasoning": "Converted 3/4 inch to millimeters using factor 1 inch = 25.4 mm resulting in 0.75 * 25.4 = 19.05 mm."
+  },
+  "Q5008": {
+    "old_description": "PVC TEE 90 1\"",
+    "new_description": "PVC TEE 90 25.4 mm",
+    "reasoning": "Converted 1 inch to millimeters using factor 1 inch = 25.4 mm resulting in 1 * 25.4 = 25.4 mm."
+  },
+  "Q5009": {
+    "old_description": "PVC TEE 90 11/4\"",
+    "new_description": "PVC TEE 90 69.85 mm",
+    "reasoning": "Converted 11/4 inches (1.25 inches) to millimeters using factor 1 inch = 25.4 mm resulting in 1.25 * 25.4 = 69.85 mm."
+  },
+  "Q5010": {
+    "old_description": "PVC TEE 90 11/2\"",
+    "new_description": "PVC TEE 90 139.7 mm",
+    "reasoning": "Converted 11/2 inches (1.5 inches) to millimeters using factor 1 inch = 25.4 mm resulting in 1.5 * 25.4 = 139.7 mm."
+  },
+  "Q5011": {
+    "old_description": "PVC TEE 90 2\"",
+    "new_description": "PVC TEE 90 50.8 mm",
+    "reasoning": "Converted 2 inches to millimeters using factor 1 inch = 25.4 mm resulting in 2 * 25.4 = 50.8 mm."
+  },
+  "Q5012": {
+    "old_description": "PVC TEE 90 DEG. 3\"",
+    "new_description": "PVC TEE 90 DEG. 76.2 mm",
+    "reasoning": "Converted 3 inches to millimeters using factor 1 inch = 25.4 mm resulting in 3 * 25.4 = 76.2 mm."
+  },
+  "Q5013": {
+    "old_description": "PVC TEE 90 4\"",
+    "new_description": "PVC TEE 90 102 mm",
+    "reasoning": "Converted 4 inches to millimeters using factor 25.4 (4 * 25.4 = 101.6 mm). Rounded to 102 mm."
+  },
+  "Q5014": {
+    "old_description": "PVC TEE 90 6\"",
+    "new_description": "PVC TEE 90 152 mm",
+    "reasoning": "Converted 6 inches to millimeters using factor 25.4 (6 * 25.4 = 152.4 mm). Rounded to 152 mm."
+  },
+  "Q5015": {
+    "old_description": "PVC TEE 90 8\"",
+    "new_description": "PVC TEE 90 203 mm",
+    "reasoning": "Converted 8 inches to millimeters using factor 25.4 (8 * 25.4 = 203.2 mm). Rounded to 203 mm."
+  },
+  "Q6001": {
+    "old_description": "PVC SOCKET 3/4\"",
+    "new_description": "PVC SOCKET 19 mm",
+    "reasoning": "Converted 0.75 inches to millimeters using factor 25.4 (0.75 * 25.4 = 19.05 mm). Rounded to 19 mm."
+  },
+  "Q6002": {
+    "old_description": "PVC SOCKET 1\"",
+    "new_description": "PVC SOCKET 25 mm",
+    "reasoning": "Converted 1 inch to millimeters using factor 25.4 (1 * 25.4 = 25.4 mm). Rounded to 25 mm."
+  },
+  "Q6003": {
+    "old_description": "PVC SOCKET 11/4\"",
+    "new_description": "PVC SOCKET 32 mm",
+    "reasoning": "Converted 1.25 inches to millimeters using factor 25.4 (1.25 * 25.4 = 31.75 mm). Rounded to 32 mm."
+  },
+  "Q6004": {
+    "old_description": "PVC SOCKET 11/2\"",
+    "new_description": "PVC SOCKET 38 mm",
+    "reasoning": "Converted 1.5 inches to millimeters using factor 25.4 (1.5 * 25.4 = 38.1 mm). Rounded to 38 mm."
+  },
+  "Q6005": {
+    "old_description": "PVC SOCKET 2\"",
+    "new_description": "PVC SOCKET 51 mm",
+    "reasoning": "Converted 2 inches to millimeters using factor 25.4 (2 * 25.4 = 50.8 mm). Rounded to 51 mm."
+  },
+  "Q6006": {
+    "old_description": "PVC SOCKET 3\"",
+    "new_description": "PVC SOCKET 76 mm",
+    "reasoning": "Converted 3 inches to millimeters using factor 25.4 (3 * 25.4 = 76.2 mm). Rounded to 76 mm."
+  },
+  "Q6007": {
+    "old_description": "PVC SOCKET 4\"",
+    "new_description": "PVC SOCKET 102 mm",
+    "reasoning": "Converted 4 inches to millimeters using factor 25.4 (4 * 25.4 = 101.6 mm). Rounded to 102 mm."
+  },
+  "Q6008": {
+    "old_description": "PVC SOCKET 6\"",
+    "new_description": "PVC SOCKET 152.4 mm",
+    "reasoning": "Converted 6 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q6009": {
+    "old_description": "PVC SOCKET 8\"",
+    "new_description": "PVC SOCKET 203.2 mm",
+    "reasoning": "Converted 8 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q6010": {
+    "old_description": "PVC CAP 3/4\"",
+    "new_description": "PVC CAP 19.05 mm",
+    "reasoning": "Converted 3/4 inch (0.75 inch) to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q6011": {
+    "old_description": "PVC CAP 1\"",
+    "new_description": "PVC CAP 25.4 mm",
+    "reasoning": "Converted 1 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q6012": {
+    "old_description": "PVC CAP 11/4\"",
+    "new_description": "PVC CAP 31.75 mm",
+    "reasoning": "Converted 1 1/4 inch (1.25 inch) to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q7001": {
+    "old_description": "PVC CAP 11/2\"",
+    "new_description": "PVC CAP 38.1 mm",
+    "reasoning": "Converted 1 1/2 inch (1.5 inch) to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q7002": {
+    "old_description": "PVC CAP 2\"",
+    "new_description": "PVC CAP 50.8 mm",
+    "reasoning": "Converted 2 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q7003": {
+    "old_description": "PVC CAP 3\"",
+    "new_description": "PVC CAP 76.2 mm",
+    "reasoning": "Converted 3 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q7004": {
+    "old_description": "PVC CAP 4\"",
+    "new_description": "PVC CAP 101.6 mm",
+    "reasoning": "Converted 4 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q7005": {
+    "old_description": "PVC CAP 6\"",
+    "new_description": "PVC CAP 152.4 mm",
+    "reasoning": "Converted 6 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q7006": {
+    "old_description": "PVC CAP 8\" Make : Effast , Italy Note : Effast pipes are produced in Oman, under polypipe authorisation Project : Wynn tower - Corridors and Guest rooms",
+    "new_description": "PVC CAP 203.2 mm Make : Effast , Italy Note : Effast pipes are produced in Oman, under polypipe authorisation Project : Wynn tower - Corridors and Guest rooms",
+    "reasoning": "Converted 8 inches to millimeters using factor 1 inch = 25.4 mm resulting in 8 * 25.4 = 203.2 mm."
+  },
+  "Q7007": {
+    "old_description": "3/4\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "19.05 mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 3/4 inch to millimeters using factor 1 inch = 25.4 mm resulting in 3/4 * 25.4 = 19.05 mm."
+  },
+  "Q7008": {
+    "old_description": "1\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "25.4 mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 1 inch to millimeters using factor 1 inch = 25.4 mm resulting in 1 * 25.4 = 25.4 mm."
+  },
+  "Q7009": {
+    "old_description": "11/4\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "31.75 mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 1 1/4 inches to millimeters using factor 1 inch = 25.4 mm resulting in 1.25 * 25.4 = 31.75 mm."
+  },
+  "Q7010": {
+    "old_description": "11/2\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "38.1 mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 1 1/2 inches to millimeters using factor 1 inch = 25.4 mm resulting in 1.5 * 25.4 = 38.1 mm."
+  },
+  "Q8001": {
+    "old_description": "2\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "50.8 mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 2 inches to millimeters using factor 1 inch = 25.4 mm resulting in 2 * 25.4 = 50.8 mm."
+  },
+  "Q8002": {
+    "old_description": "3\"X6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "new_description": "76.2 mmX6 MTR UPVC PR PIPE CLS E - EFFAST",
+    "reasoning": "Converted 3 inches to millimeters using factor 1 inch = 25.4 mm resulting in 3 * 25.4 = 76.2 mm."
+  },
+  "Q8003": {
+    "old_description": "4\"X6 MTR UPVC PR PIPE CLS E EFFAST",
+    "new_description": "101.6 mmX6 MTR UPVC PR PIPE CLS E EFFAST",
+    "reasoning": "Converted 4 inches to millimeters using factor 1 inch = 25.4 mm resulting in 4 * 25.4 = 101.6 mm."
+  },
+  "Q8004": {
+    "old_description": "PVC REDUCING BUSH 3/4\"x1/2\"",
+    "new_description": "PVC REDUCING BUSH 19.05 mmx12.7 mm",
+    "reasoning": "Converted 3/4 inch and 1/2 inch to millimeters using factor 1 inch = 25.4 mm resulting in 3/4 * 25.4 = 19.05 mm and 1/2 * 25.4 = 12.7 mm respectively."
+  },
+  "Q8005": {
+    "old_description": "PVC REDUCING BUSH 1\"X3/4\"",
+    "new_description": "PVC REDUCING BUSH 25.4 mmX19.05 mm",
+    "reasoning": "Converted 1 inch and 3/4 inch to millimeters using factor 1 inch = 25.4 mm resulting in 1 * 25.4 = 25.4 mm and 3/4 * 25.4 = 19.05 mm respectively."
+  },
+  "Q8006": {
+    "old_description": "PVC REDUCING BUSH 11/4X1\"",
+    "new_description": "PVC REDUCING BUSH 11/4X25.4mm",
+    "reasoning": "Converted 1 inch to 25.4 mm."
+  },
+  "Q8007": {
+    "old_description": "PVC REDUCING BUSH 11/2\"x11/4\"",
+    "new_description": "PVC REDUCING BUSH 12.7mmx6.35mm",
+    "reasoning": "Converted 1/2 inch to 12.7 mm and 1/4 inch to 6.35 mm."
+  },
+  "Q8008": {
+    "old_description": "PVC REDUCING BUSH 2\"X11/2\"",
+    "new_description": "PVC REDUCING BUSH 50.8mmX12.7mm",
+    "reasoning": "Converted 2 inches to 50.8 mm and 1/2 inch to 12.7 mm."
+  },
+  "Q8009": {
+    "old_description": "PVC REDUCING BUSH 3\"x21/2\"",
+    "new_description": "PVC REDUCING BUSH 76.2mmx63.5mm",
+    "reasoning": "Converted 3 inches to 76.2 mm and 2 1/2 inches to 63.5 mm."
+  },
+  "Q8010": {
+    "old_description": "PVC REDUCING BUSH 4\"X3\"",
+    "new_description": "PVC REDUCING BUSH 101.6mmX76.2mm",
+    "reasoning": "Converted 4 inches to 101.6 mm and 3 inches to 76.2 mm."
+  },
+  "Q8011": {
+    "old_description": "PVC TEE 90 3/4\"",
+    "new_description": "PVC TEE 90 19.05mm",
+    "reasoning": "Converted 3/4 inch to 19.05 mm."
+  },
+  "Q8012": {
+    "old_description": "PVC REDUCING BUSH 3/4\"x1/2\"",
+    "new_description": "PVC REDUCING BUSH 19.05mmx12.7mm",
+    "reasoning": "Converted 3/4 inch to 19.05 mm and 1/2 inch to 12.7 mm."
+  },
+  "Q8013": {
+    "old_description": "PVC TEE 90 1\"",
+    "new_description": "PVC TEE 90 25.4mm",
+    "reasoning": "Converted 1 inch to 25.4 mm."
+  },
+  "Q9001": {
+    "old_description": "PVC REDUCING BUSH 1\"X3/4\"",
+    "new_description": "PVC REDUCING BUSH 25.4mmX19.05mm",
+    "reasoning": "Converted 1 inch to 25.4 mm and 3/4 inch to 19.05 mm."
+  },
+  "Q9002": {
+    "old_description": "PVC TEE 90 11/4\"",
+    "new_description": "PVC TEE 90 6.35mm",
+    "reasoning": "Converted 1/4 inch to 6.35 mm."
+  },
+  "Q9003": {
+    "old_description": "PVC REDUCING BUSH 11/2\"x11/4\"",
+    "new_description": "PVC REDUCING BUSH 38.1mm x 31.75mm",
+    "reasoning": "Converted 1.5 inches to 38.1 mm and 1.25 inches to 31.75 mm using the factor 25.4 mm per inch."
+  },
+  "Q9004": {
+    "old_description": "PVC TEE 90 11/2\"",
+    "new_description": "PVC TEE 90 38.1mm",
+    "reasoning": "Converted 1.5 inches to 38.1 mm using the factor 25.4 mm per inch."
+  },
+  "Q9005": {
+    "old_description": "PVC REDUCING BUSH 11/2\"x11/4\"",
+    "new_description": "PVC REDUCING BUSH 38.1mm x 31.75mm",
+    "reasoning": "Converted 1.5 inches to 38.1 mm and 1.25 inches to 31.75 mm using the factor 25.4 mm per inch."
+  },
+  "Q9006": {
+    "old_description": "PVC TEE 90 2\"",
+    "new_description": "PVC TEE 90 50.8mm",
+    "reasoning": "Converted 2 inches to 50.8 mm using the factor 25.4 mm per inch."
+  },
+  "Q9007": {
+    "old_description": "PVC REDUCING BUSH 2\"X11/2\"",
+    "new_description": "PVC REDUCING BUSH 50.8mm x 38.1mm",
+    "reasoning": "Converted 2 inches to 50.8 mm and 1.5 inches to 38.1 mm using the factor 25.4 mm per inch."
+  },
+  "Q9008": {
+    "old_description": "PVC TEE 90 DEG. 3\"",
+    "new_description": "PVC TEE 90 DEG. 76.2mm",
+    "reasoning": "Converted 3 inches to 76.2 mm using the factor 25.4 mm per inch."
+  },
+  "Q9009": {
+    "old_description": "PVC REDUCING BUSH 3\"x21/2\"",
+    "new_description": "PVC REDUCING BUSH 76.2mm x 63.5mm",
+    "reasoning": "Converted 3 inches to 76.2 mm and 2.5 inches to 63.5 mm using the factor 25.4 mm per inch."
+  },
+  "Q9010": {
+    "old_description": "PVC TEE 90 4\"",
+    "new_description": "PVC TEE 90 101.6mm",
+    "reasoning": "Converted 4 inches to 101.6 mm using the factor 25.4 mm per inch."
+  },
+  "Q9011": {
+    "old_description": "PVC REDUCING BUSH 4\"X3\"",
+    "new_description": "PVC REDUCING BUSH 101.6mm x 76.2mm",
+    "reasoning": "Converted 4 inches to 101.6 mm and 3 inches to 76.2 mm using the factor 25.4 mm per inch."
+  },
+  "Q9012": {
+    "old_description": "PVC ELBOW 90 3/4\"",
+    "new_description": "PVC ELBOW 90 19.05mm",
+    "reasoning": "Converted 0.75 inches to 19.05 mm using the factor 25.4 mm per inch."
+  },
+  "Q10001": {
+    "old_description": "PVC ELBOW 90 1\"",
+    "new_description": "PVC ELBOW 90 25.4 mm",
+    "reasoning": "Converted 1 inch to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10002": {
+    "old_description": "PVC ELBOW 90 11/4\"",
+    "new_description": "PVC ELBOW 90 31.75 mm",
+    "reasoning": "Converted 1.25 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10003": {
+    "old_description": "PVC ELBOW 90 11/2\"",
+    "new_description": "PVC ELBOW 90 38.1 mm",
+    "reasoning": "Converted 1.5 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10004": {
+    "old_description": "PVC ELBOW 90 2\"",
+    "new_description": "PVC ELBOW 90 50.8 mm",
+    "reasoning": "Converted 2 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10005": {
+    "old_description": "PVC ELBOW 90 3\"",
+    "new_description": "PVC ELBOW 90 76.2 mm",
+    "reasoning": "Converted 3 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10006": {
+    "old_description": "PVC ELBOW 90 4\"",
+    "new_description": "PVC ELBOW 90 101.6 mm",
+    "reasoning": "Converted 4 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10007": {
+    "old_description": "PVC ELBOW 45 3/4\"",
+    "new_description": "PVC ELBOW 45 19.05 mm",
+    "reasoning": "Converted 0.75 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10008": {
+    "old_description": "PVC ELBOW 45 1\"",
+    "new_description": "PVC ELBOW 45 25.4 mm",
+    "reasoning": "Converted 1 inch to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10009": {
+    "old_description": "PVC ELBOW 45 11/4\"",
+    "new_description": "PVC ELBOW 45 31.75 mm",
+    "reasoning": "Converted 1.25 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10010": {
+    "old_description": "PVC ELBOW 45 11/2\"",
+    "new_description": "PVC ELBOW 45 38.1 mm",
+    "reasoning": "Converted 1.5 inches to millimeters using factor 1 inch = 25.4 mm."
+  },
+  "Q10011": {
+    "old_description": "PVC ELBOW 45 2\"",
+    "new_description": "PVC ELBOW 45 50.8 mm",
+    "reasoning": "Converted 2 inches to millimeters using the factor 1 inch = 25.4 mm, 2 * 25.4 = 50.8 mm"
+  },
+  "Q10012": {
+    "old_description": "PVC ELBOW 45 3\"",
+    "new_description": "PVC ELBOW 45 76.2 mm",
+    "reasoning": "Converted 3 inches to millimeters using the factor 1 inch = 25.4 mm, 3 * 25.4 = 76.2 mm"
+  },
+  "Q11001": {
+    "old_description": "PVC ELBOW 45 4\"",
+    "new_description": "PVC ELBOW 45 101.6 mm",
+    "reasoning": "Converted 4 inches to millimeters using the factor 1 inch = 25.4 mm, 4 * 25.4 = 101.6 mm"
+  },
+  "Q11002": {
+    "old_description": "PVC TEE 90 3/4\"",
+    "new_description": "PVC TEE 90 19.05 mm",
+    "reasoning": "Converted 3/4 inches to millimeters using the factor 1 inch = 25.4 mm, 0.75 * 25.4 = 19.05 mm"
+  },
+  "Q11003": {
+    "old_description": "PVC TEE 90 1\"",
+    "new_description": "PVC TEE 90 25.4 mm",
+    "reasoning": "Converted 1 inch to millimeters using the factor 1 inch = 25.4 mm, 1 * 25.4 = 25.4 mm"
+  },
+  "Q11004": {
+    "old_description": "PVC TEE 90 11/4\"",
+    "new_description": "PVC TEE 90 31.75 mm",
+    "reasoning": "Converted 1.25 inches to millimeters using the factor 1 inch = 25.4 mm, 1.25 * 25.4 = 31.75 mm"
+  },
+  "Q11005": {
+    "old_description": "PVC TEE 90 11/2\"",
+    "new_description": "PVC TEE 90 38.1 mm",
+    "reasoning": "Converted 1.5 inches to millimeters using the factor 1 inch = 25.4 mm, 1.5 * 25.4 = 38.1 mm"
+  },
+  "Q11006": {
+    "old_description": "PVC TEE 90 2\"",
+    "new_description": "PVC TEE 90 50.8 mm",
+    "reasoning": "Converted 2 inches to millimeters using the factor 1 inch = 25.4 mm, 2 * 25.4 = 50.8 mm"
+  },
+  "Q11007": {
+    "old_description": "PVC TEE 90 DEG. 3\"",
+    "new_description": "PVC TEE 90 DEG. 76.2 mm",
+    "reasoning": "Converted 3 inches to millimeters using the factor 1 inch = 25.4 mm, 3 * 25.4 = 76.2 mm"
+  },
+  "Q11008": {
+    "old_description": "PVC TEE 90 4\"",
+    "new_description": "PVC TEE 90 101.6 mm",
+    "reasoning": "Converted 4 inches to millimeters using the factor 1 inch = 25.4 mm, 4 * 25.4 = 101.6 mm"
+  },
+  "Q11009": {
+    "old_description": "PVC SOCKET 3/4\"",
+    "new_description": "PVC SOCKET 19.05 mm",
+    "reasoning": "Converted 3/4 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q11010": {
+    "old_description": "PVC SOCKET 1\"",
+    "new_description": "PVC SOCKET 25.4 mm",
+    "reasoning": "Converted 1 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q11011": {
+    "old_description": "PVC SOCKET 11/4\"",
+    "new_description": "PVC SOCKET 69.85 mm",
+    "reasoning": "Converted 11/4 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q11012": {
+    "old_description": "PVC SOCKET 11/2\"",
+    "new_description": "PVC SOCKET 139.7 mm",
+    "reasoning": "Converted 11/2 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q11013": {
+    "old_description": "PVC SOCKET 2\"",
+    "new_description": "PVC SOCKET 50.8 mm",
+    "reasoning": "Converted 2 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q11014": {
+    "old_description": "PVC SOCKET 3\"",
+    "new_description": "PVC SOCKET 76.2 mm",
+    "reasoning": "Converted 3 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12001": {
+    "old_description": "PVC SOCKET 4\"",
+    "new_description": "PVC SOCKET 101.6 mm",
+    "reasoning": "Converted 4 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12002": {
+    "old_description": "PVC CAP 3/4\"",
+    "new_description": "PVC CAP 19.05 mm",
+    "reasoning": "Converted 3/4 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12003": {
+    "old_description": "PVC CAP 1\"",
+    "new_description": "PVC CAP 25.4 mm",
+    "reasoning": "Converted 1 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12004": {
+    "old_description": "PVC CAP 11/4\"",
+    "new_description": "PVC CAP 69.85 mm",
+    "reasoning": "Converted 11/4 inch to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12005": {
+    "old_description": "PVC CAP 11/2\"",
+    "new_description": "PVC CAP 38.1 mm",
+    "reasoning": "Converted 1.5 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12006": {
+    "old_description": "PVC CAP 2\"",
+    "new_description": "PVC CAP 50.8 mm",
+    "reasoning": "Converted 2 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12007": {
+    "old_description": "PVC CAP 3\"",
+    "new_description": "PVC CAP 76.2 mm",
+    "reasoning": "Converted 3 inches to millimeters using the factor 1 inch = 25.4 mm."
+  },
+  "Q12008": {
+    "old_description": "PVC CAP 4\"",
+    "new_description": "PVC CAP 101.6 mm",
+    "reasoning": "Converted 4 inches to millimeters using the factor 1 inch = 25.4 mm."
+  }
+}
